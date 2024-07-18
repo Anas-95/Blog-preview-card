@@ -1,0 +1,140 @@
+:root {
+    /* Colors */
+    --color-primary-yellow: hsl(47, 88%, 63%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+    --color-neutral-grey: hsl(0, 0%, 50%);
+    --color-neutral-black: hsl(0, 0%, 7%);
+    /* Typography */
+    --font-family-body: 'Figtree', sans-serif;
+    --font-weight-regular: 500;
+    --font-weight-bold: 800;
+    --font-size: 16px;
+  }
+
+  body{
+    background-color: var(--color-primary-yellow);
+    font-family: var(--font-family-body);
+}
+
+.container{
+    background-color: var(--color-neutral-white);
+    width: 375px;
+    height: auto;
+    margin: auto;
+    margin-top: 10%;
+    padding-left: 1em;
+    border-radius: 30px;
+    box-shadow: 10px 10px;
+    border: 1px solid var(--color-neutral-black);
+    text-align: left;    
+} 
+
+.blog-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+} 
+
+.card-image{
+    display: block;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 1rem;
+    height: auto;
+    align-items: center;
+    
+} 
+
+.category{
+    margin: 0.5em;
+}
+
+.blog-category{
+    font-size: 14px;
+    background-color: var(--color-primary-yellow);
+    color: var(--color-neutral-black);
+    padding: 0 0.9em;
+    border-radius: 10%;
+    font-weight: var(--font-weight-bold);
+    margin: 1em 0.5em;
+    display: inline-block;
+    
+}
+
+.date{
+    margin: 0.5em;
+}
+
+.blog-date{
+    color: var(--color-neutraßßl-grey);
+    margin: 0.05em 0.5em;
+    font-size: 0.8em;
+}
+
+.title{
+    margin: 0;
+}
+
+
+.blog-title {
+    font-size: var(--color-neutral-black);
+    font-weight: var(--font-weight-bold);
+    margin: 0.5em 0.5em;
+  }
+  
+  .blog-description {
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-neutral-grey);
+    margin: 0.5em 0.5em;
+  }
+
+.author {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 1.5em 0;
+    gap: 0.5em;
+  }
+  
+.author-image {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+  }
+  
+.author-name {
+    font-size: 0.8em;
+    font-weight: var(--font-weight-bold);
+}
+
+
+.attribution{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--color-neutral-black);
+}
+
+.attribution a:hover {
+    color: var(--color-neutral-white)
+  }
+
+/* responsive media */
+@media (min-width: 768px) {
+    .blog-img {
+      max-width: 30rem;
+    }
+  
+    .blog-title {
+      font-size: 1.5em;
+    }
+  
+    .blog-description {
+      font-size: 1.1rem;
+    }
+  }
+
+
